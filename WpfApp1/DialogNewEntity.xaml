@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.DialogNewEntity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="DialogNewEntity" Height="168.608" Width="343.165" Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="labelImeNaziv" Content="Ime" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Height="23" Margin="99,7,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="225"/>
+        <Label x:Name="labelPriimekNaslov" Content="Priimek" HorizontalAlignment="Left" Margin="7,38,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxPriimek" HorizontalAlignment="Left" Height="23" Margin="99,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="225"/>
+        <Label x:Name="labelLrLu" Content="leto roj." HorizontalAlignment="Left" Margin="7,69,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxLrLu" HorizontalAlignment="Left" Height="23" Margin="99,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="225"/>
+        <Button x:Name="buttonSave" Content="Shrani podatke" HorizontalAlignment="Left" Margin="208,107,0,0" VerticalAlignment="Top" Width="116" Click="buttonSave_Click"/>
+
+    </Grid>
+</Window>

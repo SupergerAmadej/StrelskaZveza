@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AIS_N3_WCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AIS_N3_WCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Klub">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KlubID" type="xs:int" />
+      <xs:element minOccurs="0" name="LetoUstanovitve" type="xs:int" />
+      <xs:element minOccurs="0" name="Naslov" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Naziv" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Strelci" nillable="true" type="tns:ArrayOfStrelecVKlubu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Klub" nillable="true" type="tns:Klub" />
+  <xs:complexType name="ArrayOfStrelecVKlubu">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StrelecVKlubu" nillable="true" type="tns:StrelecVKlubu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStrelecVKlubu" nillable="true" type="tns:ArrayOfStrelecVKlubu" />
+  <xs:complexType name="StrelecVKlubu">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Do" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Klub" nillable="true" type="tns:Klub" />
+      <xs:element minOccurs="0" name="KlubId" type="xs:int" />
+      <xs:element minOccurs="0" name="Od" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Strelec" nillable="true" type="tns:Strelec" />
+      <xs:element minOccurs="0" name="StrelecKlubID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StrelecVKlubu" nillable="true" type="tns:StrelecVKlubu" />
+  <xs:complexType name="Strelec">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Klubi" nillable="true" type="tns:ArrayOfStrelecVKlubu" />
+      <xs:element minOccurs="0" name="LetoRojstva" type="xs:int" />
+      <xs:element minOccurs="0" name="Priimek" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StrelecID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Strelec" nillable="true" type="tns:Strelec" />
+  <xs:complexType name="ArrayOfKlub">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Klub" nillable="true" type="tns:Klub" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKlub" nillable="true" type="tns:ArrayOfKlub" />
+  <xs:complexType name="ArrayOfStrelec">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Strelec" nillable="true" type="tns:Strelec" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStrelec" nillable="true" type="tns:ArrayOfStrelec" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Admin" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Geslo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+</xs:schema>

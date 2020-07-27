@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="StrelskaZveza" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:27911/ServiceStrelskaZveza.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:27911/ServiceStrelskaZveza.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:27911/ServiceStrelskaZveza.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AIS_N3_WCF" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStrelskaZveza_AddKlub_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddKlub" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_AddKlub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddKlubResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_AddStrelec_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddStrelec" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_AddStrelec_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddStrelecResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_UpdateKlub_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateKlub" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_UpdateKlub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateKlubResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_UpdateStrelec_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStrelec" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_UpdateStrelec_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStrelecResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_DodajStrelcaVklub_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajStrelcaVklub" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_DodajStrelcaVklub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajStrelcaVklubResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_DeleteKlub_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteKlub" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_DeleteKlub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteKlubResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_DeleteStrelec_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStrelec" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_DeleteStrelec_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStrelecResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_ReturnKlubi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnKlubi" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_ReturnKlubi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnKlubiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_ReturnStrelci_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnStrelci" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_ReturnStrelci_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnStrelciResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_ReturnUseri_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnUseri" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_ReturnUseri_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnUseriResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_StrelciInKlub_InputMessage">
+    <wsdl:part name="parameters" element="tns:StrelciInKlub" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_StrelciInKlub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StrelciInKlubResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_CheckUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUser" />
+  </wsdl:message>
+  <wsdl:message name="IStrelskaZveza_CheckUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IStrelskaZveza">
+    <wsdl:operation name="AddKlub">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/AddKlub" message="tns:IStrelskaZveza_AddKlub_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/AddKlubResponse" message="tns:IStrelskaZveza_AddKlub_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStrelec">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/AddStrelec" message="tns:IStrelskaZveza_AddStrelec_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/AddStrelecResponse" message="tns:IStrelskaZveza_AddStrelec_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKlub">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/UpdateKlub" message="tns:IStrelskaZveza_UpdateKlub_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/UpdateKlubResponse" message="tns:IStrelskaZveza_UpdateKlub_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStrelec">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/UpdateStrelec" message="tns:IStrelskaZveza_UpdateStrelec_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/UpdateStrelecResponse" message="tns:IStrelskaZveza_UpdateStrelec_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajStrelcaVklub">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/DodajStrelcaVklub" message="tns:IStrelskaZveza_DodajStrelcaVklub_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/DodajStrelcaVklubResponse" message="tns:IStrelskaZveza_DodajStrelcaVklub_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKlub">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/DeleteKlub" message="tns:IStrelskaZveza_DeleteKlub_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/DeleteKlubResponse" message="tns:IStrelskaZveza_DeleteKlub_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStrelec">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/DeleteStrelec" message="tns:IStrelskaZveza_DeleteStrelec_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/DeleteStrelecResponse" message="tns:IStrelskaZveza_DeleteStrelec_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnKlubi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/ReturnKlubi" message="tns:IStrelskaZveza_ReturnKlubi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/ReturnKlubiResponse" message="tns:IStrelskaZveza_ReturnKlubi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnStrelci">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/ReturnStrelci" message="tns:IStrelskaZveza_ReturnStrelci_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/ReturnStrelciResponse" message="tns:IStrelskaZveza_ReturnStrelci_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnUseri">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/ReturnUseri" message="tns:IStrelskaZveza_ReturnUseri_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/ReturnUseriResponse" message="tns:IStrelskaZveza_ReturnUseri_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StrelciInKlub">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/StrelciInKlub" message="tns:IStrelskaZveza_StrelciInKlub_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/StrelciInKlubResponse" message="tns:IStrelskaZveza_StrelciInKlub_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStrelskaZveza/CheckUser" message="tns:IStrelskaZveza_CheckUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStrelskaZveza/CheckUserResponse" message="tns:IStrelskaZveza_CheckUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IStrelskaZveza" type="tns:IStrelskaZveza">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddKlub">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/AddKlub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStrelec">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/AddStrelec" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKlub">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/UpdateKlub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStrelec">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/UpdateStrelec" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajStrelcaVklub">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/DodajStrelcaVklub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKlub">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/DeleteKlub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStrelec">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/DeleteStrelec" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnKlubi">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/ReturnKlubi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnStrelci">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/ReturnStrelci" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnUseri">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/ReturnUseri" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StrelciInKlub">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/StrelciInKlub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <soap:operation soapAction="http://tempuri.org/IStrelskaZveza/CheckUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StrelskaZveza">
+    <wsdl:port name="BasicHttpBinding_IStrelskaZveza" binding="tns:BasicHttpBinding_IStrelskaZveza">
+      <soap:address location="http://localhost:27911/ServiceStrelskaZveza.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

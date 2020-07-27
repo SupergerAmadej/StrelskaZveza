@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a8672014-02b4-46a3-9b5f-2b601aabb1fd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:27911/ServiceStrelskaZveza.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceStrelskaZveza.xsd" MetadataType="Schema" ID="878d6d37-41fc-485b-b5da-36fce4e2d3cf" SourceId="1" SourceUrl="http://localhost:27911/ServiceStrelskaZveza.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceStrelskaZveza1.xsd" MetadataType="Schema" ID="b4dfb42d-b935-405d-ac1b-3fb8a962f911" SourceId="1" SourceUrl="http://localhost:27911/ServiceStrelskaZveza.svc?xsd=xsd1" />
+    <MetadataFile FileName="StrelskaZveza.wsdl" MetadataType="Wsdl" ID="f81b19a7-8959-4ca4-9923-f47b188fef30" SourceId="1" SourceUrl="http://localhost:27911/ServiceStrelskaZveza.svc?wsdl" />
+    <MetadataFile FileName="ServiceStrelskaZveza2.xsd" MetadataType="Schema" ID="eeca5252-8744-4edc-b553-afda0ccd141b" SourceId="1" SourceUrl="http://localhost:27911/ServiceStrelskaZveza.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceStrelskaZveza3.xsd" MetadataType="Schema" ID="88f50f09-9024-4764-a78b-f5abec1b9533" SourceId="1" SourceUrl="http://localhost:27911/ServiceStrelskaZveza.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceStrelskaZveza.disco" MetadataType="Disco" ID="ab484154-6971-49cd-9f5f-3c04bec06895" SourceId="1" SourceUrl="http://localhost:27911/ServiceStrelskaZveza.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
