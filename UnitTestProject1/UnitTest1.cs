@@ -247,13 +247,13 @@ namespace UnitTestProject1
 
     }
 
-    [TestClass, TestCategory("nebo delal")]
-    public class NeDela
-    {
-        [TestMethod, TestCategory("nebo delal ker nedela")]
-        public void nedela()
-        {
-            Assert.IsTrue(false); // poljuben test :)
-        }
-    }
+    //[TestClass, TestCategory("nebo delal")]
+    //public class NeDela
+    //{
+    //    [TestMethod, TestCategory("nebo delal ker nedela")]
+    //    public void nedela()
+    //    {
+    //        Assert.IsTrue(false); // poljuben test :)
+    //    }
+    //}
 }
