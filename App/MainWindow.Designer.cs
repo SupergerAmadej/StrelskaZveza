@@ -43,7 +43,6 @@
             this.button_vsi_klubi = new System.Windows.Forms.Button();
             this.button_vsi_strelci = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox_sort.SuspendLayout();
@@ -209,21 +208,11 @@
             this.listBox1.TabIndex = 3;
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Location = new System.Drawing.Point(529, 174);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 100);
-            this.groupBox5.TabIndex = 3;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "groupBox5";
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(564, 536);
-            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button_log_out);
             this.MinimumSize = new System.Drawing.Size(580, 575);
@@ -256,6 +245,5 @@
         private System.Windows.Forms.Button button_sort_lr;
         private System.Windows.Forms.Button button_sort_priimek_lu;
         private System.Windows.Forms.Button button_sort_ime_naziv;
-        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
